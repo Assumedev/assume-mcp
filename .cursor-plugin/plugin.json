@@ -1,0 +1,30 @@
+{
+  "name": "assume",
+  "version": "1.0.0",
+  "description": "Secretless agent execution. Request scoped capabilities; the broker injects credentials. The model never receives API keys.",
+  "author": {
+    "name": "Assume",
+    "email": "hello@assume.dev",
+    "url": "https://assume.dev"
+  },
+  "homepage": "https://assume.dev",
+  "repository": "https://github.com/Assumedev/assume-mcp",
+  "keywords": ["mcp", "assume", "agents", "capabilities", "security"],
+  "logo": ".cursor-plugin/logo.svg",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "ASSUME_MCP_TOKEN": {
+        "type": "string",
+        "title": "MCP connector token",
+        "description": "mcp_… token from Assume → agent → Add to Cursor / Install. Never an Ed25519 private key."
+      },
+      "ASSUME_AGENT_ID": {
+        "type": "string",
+        "title": "Agent id",
+        "description": "The Assume agent id (for example agent_de08ddb70281f4ce745c0612)."
+      }
+    },
+    "required": ["ASSUME_MCP_TOKEN", "ASSUME_AGENT_ID"]
+  }
+}

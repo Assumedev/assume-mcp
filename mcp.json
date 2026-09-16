@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "assume": {
+      "type": "http",
+      "url": "https://mcp.assume.dev/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ASSUME_MCP_TOKEN}",
+        "X-Assume-Agent-Id": "${ASSUME_AGENT_ID}"
+      }
+    }
+  }
+}
