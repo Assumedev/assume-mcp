@@ -2,6 +2,11 @@
   "name": "assume",
   "version": "1.0.0",
   "description": "Secretless agent execution. Request scoped capabilities; the broker injects credentials. The model never receives API keys.",
+  "canonicalSource": {
+    "repository": "https://github.com/CodewithABG/assume",
+    "path": ".cursor-plugin/plugin.json",
+    "syncScript": "scripts/sync-plugin-from-assume.sh"
+  },
   "author": {
     "name": "Assume",
     "email": "hello@assume.dev",

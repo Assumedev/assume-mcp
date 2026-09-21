@@ -19,6 +19,15 @@ The model never receives API keys. Operators issue a connector token and agent i
 | `.cursor-plugin/plugin.json` | Marketplace manifest and required variables |
 | `.cursor-plugin/logo.svg` | Plugin logo |
 | `mcp.json` | HTTP MCP server: `https://mcp.assume.dev/mcp` |
+| `scripts/sync-plugin-from-assume.sh` | Sync manifest/logo from canonical [assume](https://github.com/CodewithABG/assume) |
+
+`plugin.json` includes a `canonicalSource` pointer to the monorepo. Run the sync script before publishing to avoid manifest drift:
+
+```bash
+./scripts/sync-plugin-from-assume.sh
+# or with a local checkout:
+ASSUME_REPO=/path/to/assume ./scripts/sync-plugin-from-assume.sh
+```
 
 ## Product
 
