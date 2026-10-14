@@ -28,3 +28,14 @@ Assume is a capability broker: agents request scoped, time-limited permissions; 
 - Agent loop: search → describe → request capability → execute
 
 Do not paste vault passwords, PATs, or private keys into chat.
+
+## Claude custom connector
+
+This plugin is for Cursor. Claude Team orgs add Assume separately as a custom connector (no plugin variables, no `mcp_` token):
+
+1. Organization owner: Connectors → Add → Custom → Web.
+2. Name `Assume`, URL `https://mcp.assume.dev/mcp`.
+3. Authentication: Sign in now or Sign in when needed. OAuth client: Register automatically. No request headers.
+4. Each member: Customize → Connectors → Assume → Connect, then sign in to their own Assume account and pick or create an agent.
+
+A newly created agent has no account access until granted in the Assume dashboard.
