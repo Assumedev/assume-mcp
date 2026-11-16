@@ -31,7 +31,9 @@ Do not paste vault passwords, PATs, or private keys into chat.
 
 ## Claude custom connector
 
-This plugin is for Cursor. Claude Team orgs add Assume separately as a custom connector (no plugin variables, no `mcp_` token):
+This plugin is for Cursor. Claude Team orgs add Assume separately as a custom connector (no plugin variables, no `mcp_` token). Implementers: Assume repo [`docs/handbook.md`](https://github.com/CodewithABG/assume/blob/cursor/mcp-per-user-oauth-6d87/docs/handbook.md) and [`docs/agents/mcp-oauth.md`](https://github.com/CodewithABG/assume/blob/cursor/mcp-per-user-oauth-6d87/docs/agents/mcp-oauth.md).
+
+Steps:
 
 1. Organization owner: Connectors → Add → Custom → Web.
 2. Name `Assume`, URL `https://mcp.assume.dev/mcp`.
